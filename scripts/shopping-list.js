@@ -1,7 +1,4 @@
-const store = {
-  items: [],
-  hideCheckedItems: false
-};
+import store from './store.js';
 
 const generateItemElement = function (item) {
   let itemTitle = `<span class="shopping-item shopping-item__checked">${item.name}</span>`;
@@ -79,7 +76,7 @@ const getItemIdFromElement = function (item) {
 
 /**
  * Responsible for deleting a list item.
- * @param {string} id 
+ * @param {string} id
  */
 const deleteListItem = function (id) {
   const index = store.items.findIndex(item => item.id === id);
@@ -144,3 +141,6 @@ export default {
   render,
   bindEventListeners
 };
+
+console.log(store);
+console.log(foo);
