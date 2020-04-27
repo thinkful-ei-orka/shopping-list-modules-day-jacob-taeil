@@ -1,3 +1,5 @@
+import item from './item.js';
+
 let items = [];
 let hideCheckedItems = false;
 
